@@ -13,10 +13,12 @@ public class MovieCatalogApplication {
 		SpringApplication.run(MovieCatalogApplication.class, args);
 	}
 
-	@GetMapping
+	@GetMapping ("/test")
 	public String apiRoot() {
 		return "Hello world";
 	}
 
-	// spring.data.mongodb.uri = mongodb+srv://drv792:%23Googleabc12@cluster0.qfdr7ak.mongodb.net/
+	
+
+	//mongoDB implementation removed from build.gradle temporarily
 }
