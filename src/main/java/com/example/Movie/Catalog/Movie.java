@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
 
@@ -15,14 +16,17 @@ import java.util.List;
 @NoArgsConstructor
 public class Movie {
     @Id
-    private ObjectId objid;
+    private ObjectId id;
 
     private String imdbId;
     private String title;
-    private String ReleaseDate;
+    private String releaseDate;
     private String trailerLink;
-    private String Poster;
-    private List<String> genre;
+    private String poster;
+    private List<String> genres;
     private List<String> backdrops;
+
+    @DocumentReference
+    private List<Review> reviewIds;
 
 }
