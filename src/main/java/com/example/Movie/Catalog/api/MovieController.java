@@ -1,5 +1,7 @@
-package com.example.Movie.Catalog;
+package com.example.Movie.Catalog.api;
 
+import com.example.Movie.Catalog.Model.Movie;
+import com.example.Movie.Catalog.Service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
