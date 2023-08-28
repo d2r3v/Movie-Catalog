@@ -31,4 +31,7 @@ public class movie {
     @DocumentReference
     private List<Review> reviewIds;
 
+    public String getImdbId() {
+        return imdbId;
+    }
 }
