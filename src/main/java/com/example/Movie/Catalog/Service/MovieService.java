@@ -1,8 +1,7 @@
 package com.example.Movie.Catalog.Service;
 
-import com.example.Movie.Catalog.Model.Movie;
+import com.example.Movie.Catalog.Model.movie;
 import com.example.Movie.Catalog.dao.MovieRepository;
-import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +18,8 @@ public class MovieService {
 //        this.movieRepo = mvr;
 //    }
 
-    public List<Movie> allMovies() {
+    public List<movie> allMovies() {
+        System.out.println(movieRepo.findAll().size());
         return movieRepo.findAll();
     }
 

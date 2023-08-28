@@ -1,5 +1,6 @@
 package com.example.Movie.Catalog.Model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,11 +11,12 @@ import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
 
-@Document(collection = "movies")
+@Document(collection = "movie")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Movie {
+
+public class movie {
     @Id
     private ObjectId id;
 
