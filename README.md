@@ -18,4 +18,4 @@ The goal is to create a dynamic and interactive community for movie lovers.
 
 ## Use Case Diagram
 
-![ Use Case Diagram](<Use case Diagram - Doctors App.png>)
+![Use Case Diagram](<Use Case Diagram - Movie Catalog.png>)
